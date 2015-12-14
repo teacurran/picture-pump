@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroupSize">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroupType">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroupSafe">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="mainTabPane" pref="563" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="1"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="mainTabPane" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="mainTabPane">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="searchPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="search">
+                <Property name="tabTitle" type="java.lang.String" value="search"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="labelActive" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelSearchString" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelProgress" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelPending" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelChecked" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelDownloaded" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelActiveValue" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelDownloadedValue" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelCheckedValue" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelPendingValue" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="previewPanel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="progressBar" alignment="0" pref="327" max="32767" attributes="0"/>
+                                  <Component id="textSearchString" alignment="0" pref="327" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonSearch" min="-2" pref="97" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelSearchString" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="textSearchString" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonSearch" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelProgress" min="-2" max="-2" attributes="0"/>
+                          <Component id="progressBar" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelActive" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelActiveValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelPending" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelPendingValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelChecked" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelCheckedValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelDownloaded" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelDownloadedValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="previewPanel" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelSearchString">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Search String"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textSearchString">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textSearchStringActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonSearch">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="search"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonSearchActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelActive">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="active"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelProgress">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="progress"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChecked">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="checked"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelDownloaded">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="downloaded"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelCheckedValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelDownloadedValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelPending">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="pending"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelPendingValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Container class="com.approachingpi.picturepump.PreviewPanel" name="previewPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="327" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="286" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Component class="javax.swing.JProgressBar" name="progressBar">
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelActiveValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="optionsPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="options">
+                <Property name="tabTitle" type="java.lang.String" value="options"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="labelLicense" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelType" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSize" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="labelMaxResults" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelSaveToPath" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="labelMaxThreads" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelAgentSpoof" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="textMaxThreads" alignment="0" max="32767" attributes="1"/>
+                              <Component id="textMaxResults" alignment="0" pref="103" max="32767" attributes="1"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="textSaveToPath" pref="323" max="32767" attributes="0"/>
+                                      <EmptySpace min="-2" pref="118" max="-2" attributes="1"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" max="-2" attributes="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="radioSizeAny" min="-2" max="-2" attributes="0"/>
+                                          <Component id="radioTypeAny" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="radioSizeSmall" min="-2" max="-2" attributes="0"/>
+                                          <Component id="radioTypeNews" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                              <Component id="radioSizeMedium" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="radioSizeLarge" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                              <Component id="radioTypeFaces" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="radioTypePhotos" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="radioTypeLine" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="radioTypeClip" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="buttonSaveToPath" alignment="1" min="-2" pref="108" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="comboLicense" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="radioSafeOff" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="radioSafeModerate" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="radioSafeStrict" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="textAgentSpoof" alignment="0" pref="441" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textSaveToPath" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelSaveToPath" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonSaveToPath" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textMaxResults" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelMaxResults" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelMaxThreads" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="textMaxThreads" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelSize" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioSizeAny" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioSizeSmall" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioSizeMedium" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioSizeLarge" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelType" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioTypeAny" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioTypeNews" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioTypeFaces" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioTypePhotos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioTypeLine" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioTypeClip" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelLicense" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="comboLicense" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="radioSafeOff" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioSafeModerate" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioSafeStrict" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelAgentSpoof" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="textAgentSpoof" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelSaveToPath">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="save to path"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textSaveToPath">
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonSaveToPath">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonSaveToPathActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelMaxResults">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="max results"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textMaxResults">
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelMaxThreads">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="max threads"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textMaxThreads">
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelSize">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="size"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioSizeSmall">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupSize"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="small"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioSizeSmallActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioSizeMedium">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupSize"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="medium"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioSizeLarge">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupSize"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="large"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioSizeAny">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupSize"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="any"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioSizeAnyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAgentSpoof">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="agent spoof"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textAgentSpoof">
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelType">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="type"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioTypeAny">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupType"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="any"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioTypeAnyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioTypeNews">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupType"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="news"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioTypeFaces">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupType"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="faces"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioTypePhotos">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupType"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="photos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioTypePhotosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioTypeClip">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupType"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="clip art"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioTypeLine">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupType"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="line art"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelLicense">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="license"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="comboLicense">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="5">
+                    <StringItem index="0" value="Any"/>
+                    <StringItem index="1" value="Labeled for reuse"/>
+                    <StringItem index="2" value="Labeled for commercial reuse"/>
+                    <StringItem index="3" value="Labeled for reuse with modification"/>
+                    <StringItem index="4" value="Labeled for commercial reuse with modification"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="safe search"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioSafeOff">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupSafe"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="off"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioSafeModerate">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupSafe"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="moderate"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioSafeStrict">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupSafe"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="strict"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

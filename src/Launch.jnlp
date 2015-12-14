@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+"
+  codebase="file:///c:/jdc/jnlp/"
+>
+<information>
+  <title>Google Image Grab</title>
+  <vendor>Approaching Pi Inc</vendor>
+  <homepage href="/jdc" />
+  <description></description>
+</information>
+
+<offline-allowed/>
+
+<security>
+  <all-permissions/>
+</security>
+
+<resources>
+  <j2se version="1.6+" />
+  <jar href="/googleimagegrab/googleimagegrab.jar"/>
+</resources>
+
+<application-desc main-class="com.approachingpi.googleimagegrab.Application" />
+</jnlp>
